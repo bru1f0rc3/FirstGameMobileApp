@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App8.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Image Source="background.png"
+                       Grid.Row="0"
+                       Grid.RowSpan="9"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="6"
+                       Aspect="AspectFill"/>
+
+        <Image
+                    x:Name="elka"
+                    Source="elka.png"
+                    Grid.Row="0"
+                    Grid.Column="0">
+        </Image>
+
+        <Image
+                    x:Name="santa"
+                    Source="santa.png"
+                    Grid.Row="8"
+                    Grid.Column="5">
+            <Image.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left"
+                                                Swiped="SwipeGestureRecognizer_Swiped"/>
+                <SwipeGestureRecognizer Direction="Right"
+                                                Swiped="SwipeGestureRecognizer_Swiped"/>
+                <SwipeGestureRecognizer Direction="Up"
+                                                Swiped="SwipeGestureRecognizer_Swiped"/>
+                <SwipeGestureRecognizer Direction="Down"
+                                                Swiped="SwipeGestureRecognizer_Swiped"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image Grid.Row="0" Grid.Column="1" Source="box.png" />
+        <Image Grid.Row="0" Grid.Column="2" Source="box.png" />
+        <Image Grid.Row="0" Grid.Column="3" Source="box.png" />
+        <Image Grid.Row="0" Grid.Column="4" Source="box.png" />
+        <Image Grid.Row="0" Grid.Column="5" Source="box.png" />
+
+        <Image Grid.Row="1" Grid.Column="1" Source="box.png" />
+
+        <Image Grid.Row="2" Grid.Column="0" Source="box.png" x:Name="box_swipe">
+            <Image.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Right"
+                                                Swiped="SwipeGestureRecognizer_Swiped_1"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image Grid.Row="2" Grid.Column="4" Source="box.png" />
+
+        <Image Grid.Row="3" Grid.Column="2" Source="box.png" />
+        <Image Grid.Row="3" Grid.Column="4" Source="box.png" />
+
+        <Image Grid.Row="4" Grid.Column="0" Source="box.png" />
+        <Image Grid.Row="4" Grid.Column="1" Source="box.png" />
+        <Image Grid.Row="4" Grid.Column="5" Source="box.png" />
+
+        <Image Grid.Row="5" Grid.Column="0" Source="box.png" />
+        <Image Grid.Row="5" Grid.Column="2" Source="box.png" />
+        <Image Grid.Row="5" Grid.Column="4" Source="box.png" />
+        
+        <Image Grid.Row="6" Grid.Column="0" Source="box.png" />
+
+
+        <Image Grid.Row="7" Grid.Column="2" Source="box.png" />
+        <Image Grid.Row="7" Grid.Column="0" Source="box.png" />
+
+
+        <Image Grid.Row="8" Grid.Column="0" Source="box.png" />
+        <Image Grid.Row="8" Grid.Column="1" Source="box.png" />
+        <Image Grid.Row="8" Grid.Column="2" Source="box.png" />
+        <Image Grid.Row="8" Grid.Column="3" Source="box.png" />
+        <Image Grid.Row="8" Grid.Column="4" Source="box.png" />
+    </Grid>
+
+</ContentPage>
