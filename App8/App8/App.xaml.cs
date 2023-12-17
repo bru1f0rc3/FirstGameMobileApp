@@ -11,6 +11,7 @@ namespace App8
             InitializeComponent();
 
             MainPage = new MainPage();
+            MainPage = new NavigationPage(new App8.MainPage());
         }
 
         protected override void OnStart()

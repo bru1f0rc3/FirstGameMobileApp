@@ -19,8 +19,6 @@ namespace App8
         {
             int col = Grid.GetColumn(this.santa);
             int row = Grid.GetRow(this.santa);
-            string yes = "Да";
-            string dont = "Нет";
 
             switch (e.Direction)
             {
@@ -42,17 +40,7 @@ namespace App8
             if (col == Grid.GetColumn(this.elka) && row == Grid.GetRow(this.elka))
             {
                 await DisplayAlert("Поздравление", "Вы успели положить подарок под ёлку!", "Ура!");
-                bool answer = await DisplayAlert("Вопрос", "Вы хотите продолжить?", $"{yes}", $"{dont}");
-                if (answer)
-                {
-                    Grid.SetColumn(this.santa, 5);
-                    Grid.SetRow(this.santa, 8);
-                    Grid.SetColumn(this.box_swipe, 0);
-                }
-                else
-                {
-                    Environment.Exit(3);
-                }
+                await Navigation.PushAsync(new FinalStagePage());
             }
         }
 
