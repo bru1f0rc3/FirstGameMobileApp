@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App8.Page2"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid>
+        <Button Text="Version" 
+                Clicked="Button_Clicked"
+                VerticalOptions="Center"/>
+        <Button Text="Start"
+                Clicked="Button_Clicked_1"
+                HorizontalOptions="Start"/>
+        <Button Text="Quit"
+                Clicked="Button_Clicked_2"
+                HorizontalOptions="End"/>
+    </Grid>
+</ContentPage>

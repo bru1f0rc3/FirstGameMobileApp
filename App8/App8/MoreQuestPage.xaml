@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App8.MoreQuestPage"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Image Source="cmm.png"
+               Grid.Row="0"
+               Grid.RowSpan="9"
+               Aspect="AspectFill"
+               Grid.Column="0"
+               Grid.ColumnSpan="6"/>
+        <Image Source="more_quest.png"
+               Grid.Row="1"
+               Grid.Column="0"
+               Grid.RowSpan="8"
+               Grid.ColumnSpan="4"
+               Aspect="AspectFill"/>
+        <Image Source="new_Year_1.png"
+               x:Name="year1"
+               Margin="0,0,-40,0"
+               Grid.Column="4"
+               Grid.Row="5">
+            <Image.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Down"
+                                        Swiped="SwipeGestureRecognizer_Swiped"/>
+                <SwipeGestureRecognizer Direction="Left"
+                                        Swiped="SwipeGestureRecognizer_Swiped"/>
+                <SwipeGestureRecognizer Direction="Right"
+                                        Swiped="SwipeGestureRecognizer_Swiped"/>
+                <SwipeGestureRecognizer Direction="Up"
+                                        Swiped="SwipeGestureRecognizer_Swiped"/>
+            </Image.GestureRecognizers>
+        </Image>
+        
+        <Image Source="new_Year_2.png"
+               x:Name="year2"
+               Grid.Column="4"
+               Grid.Row="4">
+            <Image.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Down"
+                                        Swiped="SwipeGestureRecognizer_Swiped_1"/>
+                <SwipeGestureRecognizer Direction="Left"
+                                        Swiped="SwipeGestureRecognizer_Swiped_1"/>
+                <SwipeGestureRecognizer Direction="Right"
+                                        Swiped="SwipeGestureRecognizer_Swiped_1"/>
+                <SwipeGestureRecognizer Direction="Up"
+                                        Swiped="SwipeGestureRecognizer_Swiped_1"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image Source="new_Year_3.png"
+               x:Name="year3"
+               Grid.Column="5"
+               Grid.Row="5">
+            <Image.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Down"
+                                        Swiped="SwipeGestureRecognizer_Swiped_2"/>
+                <SwipeGestureRecognizer Direction="Left"
+                                        Swiped="SwipeGestureRecognizer_Swiped_2"/>
+                <SwipeGestureRecognizer Direction="Right"
+                                        Swiped="SwipeGestureRecognizer_Swiped_2"/>
+                <SwipeGestureRecognizer Direction="Up"
+                                        Swiped="SwipeGestureRecognizer_Swiped_2"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image Source="new_Year_4.png"
+               x:Name="year4"               
+               Grid.Column="5"
+               Grid.Row="5">
+            <Image.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Down"
+                                        Swiped="SwipeGestureRecognizer_Swiped_3"/>
+                <SwipeGestureRecognizer Direction="Left"
+                                        Swiped="SwipeGestureRecognizer_Swiped_3"/>
+                <SwipeGestureRecognizer Direction="Right"
+                                        Swiped="SwipeGestureRecognizer_Swiped_3"/>
+                <SwipeGestureRecognizer Direction="Up"
+                                        Swiped="SwipeGestureRecognizer_Swiped_3"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image Source="star.png"
+               x:Name="star"
+               Grid.Column="2"
+               Grid.ColumnSpan="2"
+               Grid.Row="0"
+               Grid.RowSpan="2">
+            <Image.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Down"
+                                        Swiped="SwipeGestureRecognizer_Swiped_4"/>
+                <SwipeGestureRecognizer Direction="Left"
+                                        Swiped="SwipeGestureRecognizer_Swiped_4"/>
+                <SwipeGestureRecognizer Direction="Right"
+                                        Swiped="SwipeGestureRecognizer_Swiped_4"/>
+                <SwipeGestureRecognizer Direction="Up"
+                                        Swiped="SwipeGestureRecognizer_Swiped_4"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image Source="new_Year_1"
+               Margin="0,0,-50,0"
+               Grid.Column="1"
+               Grid.Row="7"/>
+        <Image Source="new_Year_1"
+               Margin="0,0,-50,0"
+               Grid.Column="2"
+               Grid.Row="4"
+               Grid.RowSpan="4"/>
+        <Image Source="new_Year_1"
+               Margin="0,0,-50,0"
+               Grid.Column="0"
+               Grid.Row="3"
+               Grid.RowSpan="4"/>
+        <Image Source="new_Year_1"
+               Margin="0,0,-50,0"
+               Grid.Column="1"
+               Grid.ColumnSpan="1"
+               Grid.Row="1"
+               Grid.RowSpan="4"/>
+
+        <Image Source="new_Year_3"
+               Grid.Row="7"/>
+        <Image Source="new_Year_3"
+               Grid.Column="1"
+               Grid.Row="6"
+               Grid.RowSpan="1"/>
+        <Image Source="new_Year_3"
+               Grid.Column="2"
+               Grid.Row="4"
+               Grid.RowSpan="1"/>
+        <Image Source="new_Year_3"
+               Grid.Column="1"
+               Grid.Row="3"
+               Grid.RowSpan="1"/>
+
+        <Image Source="new_Year_2"
+               Grid.Row="5"
+               Grid.Column="1"/>
+        <Image Source="new_Year_2"
+               Grid.Row="3"
+               Grid.Column="2"/>
+        <Image Source="new_Year_2"
+               Grid.Row="7"
+               Grid.Column="3"/>
+    </Grid>
+</ContentPage>

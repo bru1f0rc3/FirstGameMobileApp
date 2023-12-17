@@ -60,7 +60,7 @@ namespace App8
                 await DisplayAlert("Мальчик", "Надо сесть за стол на кухне и съесть шоколад лежащий в подарке", "Идём");
                 await Task.Delay(800);
             }
-            int clickCount = 1;
+            int clickCount = 0;
             if (Grid.GetRow(this.boy) == 6 && (Grid.GetColumn(this.boy) == 5))
             {
                 await DisplayAlert("Мальчик", "Пора съесть шоколадку", "Начинаем");
@@ -77,7 +77,20 @@ namespace App8
 
                 await DisplayAlert("Мальчик", "Все съел шоколадку", "OK");
                 await Task.Delay(800);
+                await DisplayAlert("Мальчик", "И даже не понял что начал кушать ночью шоколадку не подождав завтрака... ладно пора теперь поспать", "Пора спать");
+                await Task.Delay(800);
                 await DisplayAlert("Главное", "Игра на этом окончена", "OK");
+                string yes = "Да";
+                string dont = "Нет";
+                bool answer = await DisplayAlert("Вопрос", "Вы хотите доп квест?", $"{yes}", $"{dont}");
+                if (answer)
+                {
+                    await Navigation.PushAsync(new MoreQuestPage());
+                }
+                else
+                {
+                    await Navigation.PushAsync(new Page2());
+                }
             }
         }
     }
