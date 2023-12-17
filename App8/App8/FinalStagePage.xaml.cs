@@ -24,9 +24,6 @@ namespace App8
             int col = Grid.GetColumn(this.boy);
             int row = Grid.GetRow(this.boy);
             
-            // string yes = "Да";
-            // string dont = "Нет";
-
             switch (e.Direction)
             {
                 case SwipeDirection.Left:
